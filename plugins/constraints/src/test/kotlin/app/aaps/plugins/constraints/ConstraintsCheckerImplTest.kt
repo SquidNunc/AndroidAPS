@@ -271,7 +271,7 @@ class ConstraintsCheckerImplTest : TestBaseWithProfile() {
 
     // Safety
     @Test
-    fun isAdvancedFilteringEnabledTest() {
+    fun `is advanced filtering enabled test`() {
         `when`(activePlugin.activeBgSource).thenReturn(glimpPlugin)
         val c = constraintChecker.isAdvancedFilteringEnabled()
         assertThat(c.reasonList).hasSize(1) // Safety
